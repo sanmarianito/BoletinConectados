@@ -1,0 +1,23 @@
+$blanco: #ffffff;
+$azul1: #003480;
+$azul2: #001250;
+$azul3: #00c7ff;
+$azul4: #0064de;
+$azul5: #00eeff;
+$verde: #00c735;
+$amarillo: #ffbd00;
+$violeta: #ff1846;
+
+//Lista
+$color: $blanco, $azul1, $azul2, $azul3, $azul4, $azul5, $verde, $amarillo, $violeta;
+$nombreC: blanco, azul1, azul2, azul3, azul4, azul5, verde, amarillo, violeta;
+/*Color*/
+@each $nombre in $nombreC {
+  $index: index($nombreC, $nombre);
+  .txt_#{$nombre} {
+    color: nth($color, $index) !important;
+  }
+  .bg_#{$nombre} {
+    background-color: nth($color, $index) !important;
+  }
+}

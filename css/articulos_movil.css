@@ -1,0 +1,125 @@
+.articulos {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  grid-gap: 10px;
+  overflow: scroll;
+}
+.articulos .item {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  min-width: 310px;
+}
+.articulos .item input {
+  display: none;
+}
+.articulos .item .expandir_mas {
+  overflow: hidden;
+  height: 480px;
+  transition: height 0.5s ease;
+}
+.articulos .item .expandir_mas::after {
+  content: "Ampliar";
+  display: flex;
+  background-color: #ffffff;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgb(255, 255, 255) 100%);
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0px;
+  align-items: flex-end;
+  font-size: 80%;
+  justify-content: center;
+  padding: 5px;
+  color: #b0b0b0;
+}
+.articulos .item #arti1:checked ~ .expandir_mas {
+  height: initial;
+  transition: height 0.5s ease;
+}
+.articulos .item #arti1:checked ~ .expandir_mas:after {
+  display: none;
+}
+.articulos .item #arti2:checked ~ .expandir_mas {
+  height: initial;
+  transition: height 0.5s ease;
+}
+.articulos .item #arti2:checked ~ .expandir_mas:after {
+  display: none;
+}
+.articulos .item #arti3:checked ~ .expandir_mas {
+  height: initial;
+  transition: height 0.5s ease;
+}
+.articulos .item #arti3:checked ~ .expandir_mas:after {
+  display: none;
+}
+.articulos .item #arti4:checked ~ .expandir_mas {
+  height: initial;
+  transition: height 0.5s ease;
+}
+.articulos .item #arti4:checked ~ .expandir_mas:after {
+  display: none;
+}
+.articulos .item #arti5:checked ~ .expandir_mas {
+  height: initial;
+  transition: height 0.5s ease;
+}
+.articulos .item #arti5:checked ~ .expandir_mas:after {
+  display: none;
+}
+.articulos .item .txt {
+  padding: 0 20px;
+}
+
+.cifra {
+  min-height: 484px;
+}
+
+@media (min-width: 768px) {
+  .articulos {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  .articulos .item {
+    max-width: 350px;
+  }
+  .cifra {
+    padding: 30px;
+    height: 100%;
+  }
+  .c_camiseta {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .c_camiseta .cliente {
+    text-align: center;
+    font: 26px "cronos-pro";
+    display: flex;
+    height: initial;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .c_camiseta .cliente .pregunta {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .c_camiseta .cliente img {
+    width: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    border: none;
+  }
+}/*# sourceMappingURL=articulos_movil.css.map */

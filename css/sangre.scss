@@ -1,0 +1,491 @@
+/* css apoyo*/
+/* @import url(color.css); */
+
+/*fuentes*/
+@import url("https://use.typekit.net/vro2czg.css"); /*Cronos Pro*/
+
+/*Color*/
+@import "color";
+
+/*generales*/
+body {
+  margin: 0;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  position: relative;
+  background: {
+    color: #f6f6f6;
+    image: url(images/fondo-conectados.png);
+    repeat: no-repeat;
+    size: 100%;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0.8em;
+    background-color: #333333;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #838383;
+    $wd: 2px;
+    border: 0px {
+      bottom: $wd;
+      top: $wd;
+      style: solid;
+      color: #3c3c3c;
+    }
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  color: $azul3;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "cronos-pro";
+  font-weight: 700;
+  color: $azul1;
+}
+.respon {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+.content {
+  max-width: 1410px;
+  margin: auto;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+/*Cabezote*/
+header {
+  color: $azul1;
+  padding: 20px;
+  text-align: center;
+  background: rgb(0, 55, 125);
+  background: linear-gradient(0deg, rgba(0, 55, 125, 1) 9%, rgba(0, 55, 125, 0) 100%);
+}
+.head {
+  margin-bottom: 20px;
+}
+.name {
+  padding: 10px;
+  img {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+.data {
+  font-size: 14px;
+  color: #ffffff;
+
+  span {
+    border-left: 1px solid $amarillo;
+    padding-left: 8px;
+    margin-left: 8px;
+  }
+}
+
+.logohead img {
+  width: 100%;
+  max-width: 80px;
+}
+
+/*titular*/
+.titular {
+  position: relative;
+
+  .thumbnail {
+    height: 400px;
+    overflow: hidden;
+  }
+  .thumbnail img {
+    display: block;
+    min-width: 200vw;
+  }
+  &.videot {
+    .thumbnail {
+      display: none;
+    }
+    .item {
+      margin-top: 0px;
+      right: 0;
+    }
+  }
+  .item {
+    background: $azul1;
+    color: #fff;
+    padding: 47px 25px 50px;
+    margin-top: -90px;
+    position: relative;
+  }
+
+  h1 {
+    color: $amarillo;
+    font-weight: 600;
+  }
+
+  .tag::before {
+    color: #fff !important;
+    margin: 0px;
+    border: none;
+    margin-bottom: 20px;
+  }
+}
+/*articulos*/
+.articulos {
+  padding: 20px;
+  margin-top: -60px;
+  z-index: 100;
+  position: relative;
+
+  .item {
+    background-color: #fff;
+    box-shadow: 0px 0px 6px #0000001c;
+    margin-bottom: 40px;
+  }
+  .txt {
+    padding: 10px;
+  }
+}
+.thumbnail {
+  margin-bottom: 5px;
+}
+
+/*Cifra*/
+.cifra {
+  background: {
+    image: url(../img/cifra.jpg);
+    size: cover;
+    position: center;
+  }
+  text-align: center;
+  color: #fff;
+  padding: 64px 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  span {
+    font-size: 0.5em;
+    display: block;
+  }
+}
+.num {
+  font: 800 5em "cronos-pro";
+  color: $amarillo;
+  border-bottom: 1px solid $amarillo;
+  line-height: 0.7em;
+  margin: 0 -20px 25px;
+}
+
+/* DEBES SABER */
+.debe {
+  background-color: #ffffff;
+  color: $azul2;
+  padding: 30px;
+  box-shadow: 0px 0px 5px #0000001c;
+
+  h1 {
+    text-align: center;
+    color: $azul1;
+    font-size: 40px;
+  }
+
+  a {
+    color: inherit;
+    font-size: 1em;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+/* Historias */
+.comple {
+  margin-bottom: 40px;
+}
+.historias {
+  color: #fff;
+  background-color: black;
+
+  h1 {
+    color: $amarillo;
+  }
+  .txt {
+    padding: 20px;
+  }
+}
+
+/* Medios */
+.comple.nohistoria {
+  display: block;
+  .noti {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(318px, 1fr));
+    column-gap: 20px;
+    width: 100%;
+  }
+}
+.medios {
+  color: #fff;
+  background-color: $azul1;
+  padding: 20px;
+  font: {
+    size: 13px;
+    weight: 600;
+  }
+
+  .md {
+    height: 80px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .thumbnail {
+    position: absolute;
+  }
+  .txt {
+    background-color: #002d81ad;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    height: 100%;
+  }
+  h1 {
+    color: $amarillo;
+  }
+  p ~ p {
+    font-weight: 300;
+  }
+  p {
+    margin: 0px;
+  }
+}
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  .debe {
+    display: block;
+  }
+  .comple {
+    grid-column: 2 / span 2;
+  }
+}
+
+/* Cliente */
+.cliente {
+  background: linear-gradient(to left, #001c4e 14%, #000231 100%);
+  padding: 20px;
+  color: $amarillo;
+  text-align: center;
+  font: 20px "cronos-pro";
+  margin-bottom: 40px;
+
+  img {
+    width: 100%;
+    margin-top: -40px;
+    border-bottom: 1px solid $amarillo;
+  }
+  .txt {
+    padding: 10px;
+  }
+}
+
+/* Banner */
+.banner {
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+  }
+}
+/* footer */
+.media {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  a {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    text-decoration: none;
+  }
+  p {
+    display: none;
+    margin: 0px;
+    margin-left: 5px;
+    font-size: 0.8em;
+  }
+}
+
+footer .logo {
+  text-align: center;
+}
+
+/*----------------------aux----------------------*/
+.btn {
+  display: block;
+  text-align: center;
+  font: 0.8em "cronos-pro";
+  border-radius: 100px;
+  margin: 5px 0;
+  &.btn_1 {
+    border: 1px solid $azul3;
+    color: $azul3;
+    &:hover {
+      background-color: $azul3;
+      color: #fff;
+    }
+  }
+  &.btn_2 {
+    background-color: $azul1;
+    color: #fff;
+
+    &:hover {
+      background-color: #0054d1;
+      color: #fff;
+    }
+  }
+  &.btn_3 {
+    background-color: $amarillo;
+    color: $azul1;
+    &:hover {
+      background-color: #fff;
+      border: 1px solid $amarillo;
+      color: $azul1;
+    }
+  }
+}
+
+.ver_mas {
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: $azul3;
+  &.collapsed::after {
+    content: "Ver más";
+  }
+  &::after {
+    content: "Ver menos";
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+/*----------------------tags---------------------*/
+.tag {
+  &::before {
+    display: inline-block;
+    font: 600 18px "cronos-pro";
+    border-bottom: 1px solid;
+    margin: 10px;
+  }
+
+  &.Corporativo::before {
+    content: "Corporativo";
+    color: $azul1;
+    border-color: $azul1;
+  }
+  &.Cultura::before {
+    content: "Cultura";
+    border-color: #ffbe00;
+    color: #ffbe00;
+  }
+
+  &.Digital::before {
+    content: "Digital";
+    color: $azul2;
+    border-color: $azul2;
+  }
+
+  &.Regiones::before {
+    content: "Desde las Regiones";
+    color: #e300b8;
+    border-color: #e300b8;
+  }
+
+  &.Interes::before {
+    content: "De interés";
+    color: #6a00c4;
+    border-color: #6a00c4;
+  }
+
+  &.Negocios::before {
+    content: "Negocios";
+    color: #4a6a96;
+    border-color: #4a6a96;
+  }
+
+  &.Sostenibilidad::before {
+    content: "Sostenibilidad";
+    color: #d0d600;
+    border-color: #d0d600;
+  }
+
+  &.ASG::before {
+    content: "ASG";
+    color: #a4e400;
+    border-color: #a4e400;
+  }
+
+  &.Innovacion::before {
+    content: "Innovación";
+    color: $azul2;
+    border-color: $azul2;
+  }
+
+  &.Clientes::before {
+    content: "Cliente";
+    color: #0000f4;
+    border-color: #0000f4;
+  }
+
+  &.Clientesb2b::before {
+    content: "Cliente B2B";
+    color: #0000f4;
+    border-color: #0000f4;
+  }
+
+  &.Reputacion::before {
+    content: "Reputación";
+    color: #ff5500;
+    border-color: #ff5500;
+  }
+
+  &.Beneficios::before {
+    content: "Beneficios";
+    color: #5f5f5f;
+    border-color: #5f5f5f;
+  }
+
+  &.Eventos::before {
+    content: "Eventos";
+    color: $azul1;
+    border-color: $azul1;
+  }
+}
+
+@import "media";

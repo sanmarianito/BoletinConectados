@@ -1,0 +1,74 @@
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.edicion {
+  position: relative;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.numero {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  background: #003275be;
+  color: #fff;
+  bottom: 0px;
+  margin: 0;
+  padding: 9px 0;
+  h3 {
+    font-size: 37px;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.thumbnail {
+  position: relative;
+  z-index: 0;
+}
+
+.contenido {
+  position: absolute;
+  top: 0px;
+  padding: 0px 21px;
+  background: #00367dda;
+  color: #fff;
+  height: 0px;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+  z-index: 10;
+
+  h2 {
+    color: #ffbe00;
+  }
+  ul {
+    padding-left: 26px;
+  }
+  li {
+    list-style: none;
+    line-height: 1.4em;
+    font-size: 0.95em;
+    &::before {
+      content: "\2022";
+      color: #ffbe00;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      font-size: 1.6em;
+      top: 4px;
+      position: relative;
+    }
+  }
+}
+
+a:hover .contenido {
+  height: 100%;
+  padding: 10px 21px;
+  transition: all 400ms ease-out;
+}

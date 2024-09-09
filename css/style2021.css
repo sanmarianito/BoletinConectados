@@ -1,0 +1,444 @@
+/* css apoyo*/
+@import url(color.css);
+
+/*fuentes*/
+@import url("https://use.typekit.net/shy3mqd.css"); /*Cronos Pro*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+
+/*generales*/
+body {
+  margin: 0;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  position: relative;
+  background-color: #f6f6f6;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8em;
+  background-color: #333333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #838383;
+  border: 0px;
+  border-bottom: 2px;
+  border-top: 2px;
+  border-style: solid;
+  border-color: #3c3c3c;
+}
+
+strong{
+  font-weight:700;
+}
+a {
+    color: var(--azul3);
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "cronos-pro";
+  font-weight: 700;
+  color: var(--azul1);
+}
+.respon {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+.content {
+  max-width: 1410px;
+  margin: auto;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+/*Cabezote*/
+header {
+  color: var(--azul1);
+  padding: 20px;
+  text-align: center;
+}
+.head {
+  margin-bottom: 20px;
+}
+.name {
+  padding: 10px;
+}
+.name img {
+  width: 100%;
+  max-width: 250px;
+}
+.data {
+  font-size: 14px;
+}
+.data span {
+  border-left: 1px solid var(--amarillo);
+  padding-left: 8px;
+  margin-left: 8px;
+}
+.logohead img {
+  width: 100%;
+  max-width: 100px;
+}
+
+/*titular*/
+.titular {
+  position: relative;
+}
+.titular .thumbnail {
+  height: 276px;
+  overflow: hidden;
+}
+.titular .thumbnail img {
+  display: block;
+  min-width: 200vw;
+}
+.titular .item {
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0 0 0 / 80%) 25%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 25%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0%) 0%,
+    rgb(0 28 78) 14%,
+    rgb(0 2 49) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
+  color: #fff;
+  padding: 47px 25px 50px;
+  margin-top: -90px;
+  position: relative;
+}
+.titular h1 {
+  color: var(--amarillo);
+  font-weight: 600;
+}
+
+.titular .tag::before {
+  color: #fff !important;
+  margin: 0px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+/*articulos*/
+.articulos {
+  padding: 20px;
+  margin-top: -60px;
+  z-index: 100;
+  position: relative;
+}
+.articulos .item {
+  background-color: #fff;
+  box-shadow: 0px 0px 6px #0000001c;
+  margin-bottom: 40px;
+}
+.articulos .txt {
+  padding: 10px;
+}
+.thumbnail {
+  margin-bottom: 5px;
+}
+
+/*Cifra*/
+.cifra {
+  background-image: url(../img/cifra.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 64px 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.cifra span {
+  font-size: 0.5em;
+  display: block;
+}
+.num {
+  font: 800 5em "cronos-pro";
+  color: var(--amarillo);
+  border-bottom: 1px solid var(--amarillo);
+  line-height: 0.7em;
+  margin: 0 -20px 25px;
+}
+
+/* DEBES SABER */
+.debe {
+  background-color: var(--azul1);
+  color: var(--azul3);
+  padding: 30px;
+}
+.debe h1 {
+  text-align: center;
+  color: var(--amarillo);
+  font-size: 40px;
+}
+.debe a {
+  color: inherit;
+  font-size: 0.8em;
+  text-decoration: none;
+  display: block;
+}
+.debe a:hover {
+  color: #fff;
+}
+.debe a::after {
+  content: " | ";
+}
+
+/* Historias */
+.comple{
+  margin-bottom: 40px;
+}
+.historias {
+  color: #fff;
+  background-color: black;
+}
+.historias h1 {
+  color: var(--amarillo);
+}
+.historias .txt {
+  padding: 20px;
+}
+
+/* Medios */
+.medios {
+  color: #fff;
+  background-color: var(--azul1);
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.medios .md {
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+.medios a {
+  text-decoration: none;
+  color: inherit;
+}
+.medios .thumbnail {
+  position: absolute;
+}
+.medios .txt {
+  background-color: rgb(0 45 129 / 68%);
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+  height: 100%;
+}
+.medios h1 {
+  color: var(--amarillo);
+}
+.medios p ~ p {
+  font-weight: 300;
+}
+.medios p {
+  margin: 0px;
+}
+
+/* Cliente */
+.cliente {
+  background: linear-gradient(to left, #001c4e 14%, #000231 100%);
+  padding: 20px;
+  color: var(--amarillo);
+  text-align: center;
+  font: 20px "cronos-pro";
+  margin-bottom: 40px;
+}
+.cliente img {
+  width: 100%;
+  margin-top: -40px;
+  border-bottom: 1px solid var(--amarillo);
+}
+.cliente .txt{
+  padding: 10px;
+}
+
+/* Banner */
+.banner{
+  margin-bottom: 20px;
+}
+.banner img{
+  width: 100%;
+}
+
+
+/* footer */
+.media{ 
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2,minmax(40%, 1fr));
+  padding: 20px;
+}
+.media a{
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+.media p{
+  margin: 0px;
+  margin-left: 5px;
+  font-size: 0.8em;
+}
+
+footer .logo{
+  text-align: center;
+}
+
+
+/*----------------------aux----------------------*/
+.btn{
+  display: block;
+  text-align: center;
+  font: 0.8em 'cronos-pro';
+  border-radius: 100px;
+  margin: 5px 0;
+}
+.btn_1{
+  border:1px solid var(--azul3);
+  color: var(--azul3);
+}
+.btn_1:hover{
+    background-color: var(--azul3);
+    color: #fff;
+}
+.btn_2{
+  background-color: var(--azul1);
+  color: #fff;
+}
+.btn_2:hover{
+  background-color: #0054d1;
+  color: #fff;
+}
+.btn_3{
+  background-color: var(--amarillo);
+  color: var(--azul1);
+}
+.btn_3:hover{
+  background-color: #fff;
+  border: 1px solid var(--amarillo);
+  color: var(--azul1);
+}
+.ver_mas {
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--azul3);
+}
+.ver_mas.collapsed::after{
+  content: 'Ver más';
+}
+.ver_mas::after{
+  content: 'Ver menos';
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+/*----------------------tags---------------------*/
+.tag::before {
+  display: inline-block;
+  font: 600 18px "cronos-pro";
+  border-bottom: 1px solid;
+  margin: 10px;
+}
+
+.tag.Corporativo::before {
+  content: "Corporativo";
+  color: var(--azul1);
+  border-color: var(--azul1);
+}
+.tag.Cultura::before {
+  content: "Cultura";
+  border-color: #ffbe00;
+  color: #ffbe00;
+}
+
+.tag.Digital::before {
+  content: "Digital";
+  color: var(--azul2);
+  border-color: var(--azul2);
+}
+
+.tag.Regiones::before {
+  content: "Desde las Regiones";
+  color: #e300b8;
+  border-color: #e300b8;
+}
+
+.tag.Interes::before {
+  content: "De interés";
+  color: #6a00c4;
+  border-color: #6a00c4;
+}
+
+.tag.Negocios::before {
+  content: "Negocios";
+  color: #4a6a96;
+  border-color: #4a6a96;
+}
+
+.tag.Sostenibilidad::before {
+  content: "Sostenibilidad";
+  color: #d0d600;
+  border-color: #d0d600;
+}
+
+.tag.Innovacion::before {
+  content: "Innovación";
+  color: var(--azul2);
+  border-color: var(--azul2);
+}
+
+.tag.Clientes::before {
+  content: "Cliente";
+  color: #0000f4;
+  border-color: #0000f4;
+}
+
+.tag.Clientesb2b::before {
+  content: "Cliente B2B";
+  color: #0000f4;
+  border-color: #0000f4;
+}
+
+.tag.Reputacion::before {
+  content: "Reputación";
+  color: #ff5500;
+  border-color: #ff5500;
+}
+
+.tag.Reportero::before {
+  content: "El reportero soy yo";
+  color: #5f5f5f;
+  border-color: #5f5f5f;
+}
+
+.tag.Eventos::before {
+  content: "Eventos";
+  color: var(--azul1);
+  border-color: var(--azul1);
+}
